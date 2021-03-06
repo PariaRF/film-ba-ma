@@ -1,0 +1,27 @@
+.dropDown-menu{
+    background-color: #F8F9FA;
+    width: 160px;
+    border-radius: 4px;
+    line-height: 1rem;
+    padding: 12px 10px;
+    position: absolute;
+    top: 40px;
+    list-style: none;
+    text-align: start;
+}
+
+.dropDown-menu li{
+    cursor: pointer;
+    display: block;
+}
+
+.dropDown-menu li:hover{
+    background-color:#eff3f8;
+}
+
+.dropDown-link{
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+    color: black;
+}

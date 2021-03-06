@@ -1,0 +1,31 @@
+.navbar{
+    margin-left: 10px;
+    margin-top: -1px;
+    color: white;
+}
+
+
+.nav-item{
+    margin: 3px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction:  row;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    position: absolute;
+    top: -10.5px;
+    left: 157px;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.nav-link{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
