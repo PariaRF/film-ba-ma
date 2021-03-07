@@ -1,12 +1,14 @@
 import './App.css';
 import Header from './component/layout/header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Pages from "./component/pages";
+import Pages from "./component/pages/pages-of-menu";
+import MainPage from './component/pages/main-page';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
+      <MainPage />
       <Switch>
         <Route path="/movie/popular" component={Pages} />
         <Route path="/movie/new-plaing" component={Pages} />
