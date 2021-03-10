@@ -3,12 +3,14 @@ import Header from './component/layout/header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Pages from "./component/pages/pages-of-menu";
 import MainPage from './component/pages/main-page';
+import Footer from './component/layout/footer';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <MainPage />
+      <Footer />
       <Switch>
         <Route path="/movie/popular" component={Pages} />
         <Route path="/movie/new-plaing" component={Pages} />
