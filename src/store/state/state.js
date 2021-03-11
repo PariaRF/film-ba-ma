@@ -2,6 +2,7 @@ const initState ={
     getPopular: {},
     getFullUrlImage: {},
     getPopularDetail: {},
+    getSearch: {},
     isLoading: false,
     errorFetchData: false,
     ErrorFetchDataMessage: ""

@@ -6,6 +6,7 @@ import MainPage from './component/pages/main-page';
 import Footer from './component/layout/footer';
 import DetailPopularMovie from './component/pages/detail-popular-movie';
 import NotFound from './component/pages/not-found';
+import Search  from './component/pages/search';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/more/leaderboard" component={Pages} />
         <Route exact path="/more/support" component={Pages} />
         <Route exact path="/more/api" component={Pages} />
+        <Route exact path="/search/:title" component={Search}/>
         <Route exact path="/*" component={NotFound}/>
       </Switch>
       <Footer />
