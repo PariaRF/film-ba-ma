@@ -1,0 +1,116 @@
+.bg{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    height: 500px;
+    margin-top: -13px;
+}
+
+.card-poster{
+    position: absolute;
+    top: 36px;
+    left: 28px;
+    border-radius: 10px;
+    /* border: 4px solid black; */
+    max-height: 500px;
+}
+
+.card-img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 440px;
+    width: 290px;
+}
+
+.card-footer{
+    background-color: #032541;
+    height: 60px;
+    margin-top: -20px;
+    width: 290px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.text-footer{
+position: absolute;
+top: 0px;
+left: 90px;
+cursor: pointer;
+}
+
+.text-detail{
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    border-radius: 10px;
+    /* border: 4px solid black; */
+    height: 500px;
+    width: 900px;
+    color: white;
+}
+
+.text-film{
+    font-size: 2.2rem;
+}
+
+.one-line{
+    display: flex;
+}
+
+.second-line{
+    display: flex;
+}
+
+.score{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #032541;
+    text-align: center;
+    position: relative;
+}
+
+.score-text{
+position: absolute;
+top: 6px;
+left: 18px;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #032541;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    top: 2px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.text-circle{
+    position: absolute; 
+    top: 15px;
+    right: 17px;
+}
+
+.play{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    color: black;
+}
+
+.play:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.overview-detail{
+    color: black;
+}

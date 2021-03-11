@@ -1,0 +1,23 @@
+.menu-popular{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 50px; */
+    padding: 10px 0px;
+}
+
+.menu-item{
+    margin-right: 35px;
+    cursor: pointer;
+    /* margin-bottom: 15px; */
+}
+
+.select-item{
+    border-bottom: 4px solid #01B4E4;
+    max-width: 100px;
+    padding: 9px;
+    margin-right: 35px;
+
+}
