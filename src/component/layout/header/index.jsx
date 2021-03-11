@@ -36,7 +36,10 @@ const Header = () => {
 
     const handleGo = (e)=>{
         if(e.key === "Enter"){
-            history.push(`/search/${inputValue}`);        
+            setClick(false);
+            history.push(`/search/${inputValue}`);    
+            setClick(false);
+
         }
     }
 
