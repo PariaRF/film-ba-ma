@@ -14,11 +14,6 @@ import "./index.css";
 
 const DetailPopular = () => {
 
-    const addToFavorite = (getPopularDetail) =>{
-        console.log("getPopularDetail:", getPopularDetail);
-        // localStorage.setItem()
-    }
-
     const { id } = useParams();
     // console.log("id params is:", id);
 
@@ -88,7 +83,7 @@ const DetailPopular = () => {
                                             </div>
                                             <div className="circle">
                                                 <span className="text-circle">
-                                                    <AiFillHeart onClick={(getPopularDetail) => addToFavorite(getPopularDetail)}/>
+                                                    <AiFillHeart />
                                                 </span>
                                             </div>
                                             <div className="circle">
@@ -108,7 +103,7 @@ const DetailPopular = () => {
                                         <p style={{ opacity: "0.7" }}>{getPopularDetail.tagline}</p>
                                         <div className="overview-detail">
                                             <h3>Overview</h3>
-                                            <p style={{fontSize: "1.25em"}}>{getPopularDetail.overview}</p>
+                                            <p style={{ fontSize: "1.25em" }}>{getPopularDetail.overview}</p>
                                         </div>
                                         {/* <div className="writter">
                                             {

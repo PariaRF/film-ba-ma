@@ -1,6 +1,5 @@
 const initState ={
     getPopular: {},
-    getTopCast: {},
     getFullUrlImage: {},
     getPopularDetail: {},
     isLoading: false,
