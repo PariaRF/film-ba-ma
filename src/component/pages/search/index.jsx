@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { getFullUrlImageAction } from "../../../store/actions/getFullUrlImageAction";
 import { getSearchAction } from "../../../store/actions/getSearchAction";
 import "./index.css";
+import HeadInfo from "../../../utils/head-info";
+
 
 const Search = () => {
 
@@ -23,6 +25,7 @@ const Search = () => {
 
     return (
         <>
+        <HeadInfo title={`${title} - The Movie Database(TMDB)`} description="result of search"/>
             {
                 getSearch && getImageUrl &&
 
