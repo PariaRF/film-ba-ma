@@ -77,4 +77,8 @@
     height: 60px;
     border: none;
     outline: none;
+    position: absolute;
+    top: 60px;
+    padding-left: 50px;
+    z-index: 9;
 }

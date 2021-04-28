@@ -36,9 +36,9 @@ const Header = () => {
 
     const handleGo = (e)=>{
         if(e.key === "Enter"){
-            setClick(false);
+            setClick(true);
             history.push(`/search/${inputValue}`);    
-            setClick(false);
+            setClick(true);
 
         }
     }
@@ -66,7 +66,7 @@ const Header = () => {
             </div>
             <div>
                 {
-                    click ? null : <input placeholder="Search Movie..." className="search-box" onChange={(e) => hanleChange(e)} onKeyDown={(e) => handleGo(e)}/>
+                    click ? null : <input placeholder="Search for a movie..." className="search-box" onChange={(e) => hanleChange(e)} onKeyDown={(e) => handleGo(e)}/>
                 }
             </div>
         </>
