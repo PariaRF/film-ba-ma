@@ -1,0 +1,16 @@
+.placeholder-detail{
+    width: 100%;
+    height: 500px;
+    background-color: #e5e5e5;
+    position: relative;
+}
+
+.placeholder-detail-content{
+    width: 290px;
+    height: 440px;
+    background-color: white;
+    position: absolute;
+    left: 28px;
+    top: 36px;
+    border-radius: 20px;
+}

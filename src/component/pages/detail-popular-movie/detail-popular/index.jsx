@@ -9,10 +9,14 @@ import { AiFillHeart, AiFillStar } from "react-icons/ai";
 import { BsBookmarkFill } from "react-icons/bs";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import "./index.css";
+import HeadInfo from "../../../../utils/head-info";
+import PlaceholderDetail from "../../../../utils/placeholder-detail";
 
 
 
 const DetailPopular = () => {
+
+    const [isLoading, setIsLoading] = useState(true);
 
     const { id } = useParams();
     // console.log("id params is:", id);
@@ -25,6 +29,7 @@ const DetailPopular = () => {
     useEffect(async () => {
         await dispatch(await getFullUrlImageAction(dispatch))
         await dispatch(await getPopularDetailAction(dispatch, id))
+        setIsLoading(false);
     }, []);
 
     return (
@@ -32,8 +37,10 @@ const DetailPopular = () => {
             <div className="container-fluid">
                 <div className="row">
                     {
+                        isLoading ? <PlaceholderDetail /> :
                         getImageUrl &&
                         <div className="bg" style={{ backgroundImage: `url(${getImageUrl.base_url}${getImageUrl.poster_sizes[3]}${getPopularDetail.backdrop_path})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+                            <HeadInfo title={`${getPopularDetail.title}`}/>
                             <div className="card card-poster" style={{ width: "18rem" }}>
                                 {
                                     getImageUrl && < img className="card-img" src={`${getImageUrl.base_url}${getImageUrl.poster_sizes[3]}${getPopularDetail.poster_path}`} />
@@ -75,7 +82,7 @@ const DetailPopular = () => {
                                             <div className="score">
                                                 <p className="score-text">{getPopularDetail.vote_average}%</p>
                                             </div>
-                                            <p style={{ margin: "3px", width: "6px", marginTop: "13px", color: "black", fontWeight: "700" }}>User Score</p>
+                                            <p style={{ margin: "3px", width: "6px", marginTop: "13px", color: "white", fontWeight: "700" }}>User Score</p>
                                             <div className="circle">
                                                 <span className="text-circle">
                                                     <BiListUl />
