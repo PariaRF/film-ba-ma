@@ -1,0 +1,18 @@
+.placeholder-box{
+    width: 150px;
+    height: 230px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px;
+}
+
+.placeholder-content{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: 4px;
+}

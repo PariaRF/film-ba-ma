@@ -10,10 +10,11 @@ import { BiListUl } from "react-icons/bi";
 import { AiFillHeart, AiFillStar } from "react-icons/ai";
 import { BsBookmarkFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import PlaceholderLoading from "../placeholder-loading";
 
 const PopularBox = () => {
     const [showListOption, setShowListOption] = useState(false);
-    
+    const [loading, setLoading] = useState(true);
 
     const getPopularMovie = useSelector(state => state.popularState.getPopular.results);
     const getImageUrl = useSelector(state => state.fullUrlImage.getFullUrlImage.images);
@@ -25,6 +26,7 @@ const PopularBox = () => {
         await dispatch(await getPopularAction(dispatch))
         await dispatch(await getFullUrlImageAction(dispatch))
         await dispatch(await getPopularDetailAction(dispatch))
+        setLoading(false);
     }, []);
 
     const showOption = (id) => {
@@ -75,10 +77,11 @@ const PopularBox = () => {
                         </div>
                     </div>
 
-                    <div className="row">
-                        <div className="col-md-12">
+                    <div className="row column-content">
+                        <div className="col-md-12 ">
                             <div className="popular-box scollor">
                                 {
+                                    loading ? <PlaceholderLoading/> :
                                     getImageUrl && getPopularMovie && getPopularMovie.map((item, index) => {
                                         return (
                                             <div className="card-popular" key={index}>

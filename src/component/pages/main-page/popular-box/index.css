@@ -1,4 +1,9 @@
 
+.column-content{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
 .part{
     display: flex;
     justify-content: flex-start;
@@ -39,26 +44,23 @@
 }
 
 .popular-box{
-    /* width: 100%; */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    overflow-x: scroll;
     overflow-y: hidden;
     align-items: flex-start;
     align-content: flex-start;
-    padding-left: 235px ;
+    padding-left: 15px ;
 }
 .scollorBar{
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    max-width: var(--maxPrimaryPageWidth);
     min-height: 355px;
     overflow-x: scroll;
     overflow-y: hidden;
-    transition: height .5s linear
+    transition: height .5s linear;
 }
 
 .box{
