@@ -16,7 +16,7 @@ const Carousel = () => {
                                         <h2>Welcome.</h2>
                                         <h3>Millions of movies, TV shows and people to discover. Explore now.</h3>
                                     </div>
-                                    <div className="search-box">
+                                    <div className="search-boxb">
                                         <input type="text" 
                                         placeholder="search  for a movie, tv show, person,......" 
                                         className="search-text"/>
